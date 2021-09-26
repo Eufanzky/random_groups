@@ -1,0 +1,16 @@
+{
+  "name": "randomizador",
+  "version": "1.0.0",
+  "description": "Asign task randomly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Eugenio Condori <eufanzky@gmail.com>",
+  "license": "MIT"
+}

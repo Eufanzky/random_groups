@@ -1,0 +1,206 @@
+/*
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografía (fuentes)
+4. Temas visuales (shadow box, border radius, etc)
+5. Otros
+*/
+:root {
+    /*Colores*/
+    --cool-red: #EF233C;
+    --cool-red-but-darker: #D80032;
+    --black-and-blue: #2B2D42;
+    --cool-gray: #8D99AE;
+    --soft-white: #EDF2F4;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;/*It's for when you go to the bottom with a click,
+    it will show you an animation while you go down :)*/
+    font-family: 'Cabin', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/*HEADER SECTION*/
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 158px;
+    padding: 60px;
+    font-size: 1.2rem;
+    background-color: var(--black-and-blue);
+    color: var(--soft-white);
+}
+.header__h1{
+    margin: 5px 0 10px 0;
+    text-decoration: underline;
+    text-align: center;
+}
+.header__description {
+    text-align: center;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+/*MAIN CONTENT*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 320px;
+    padding: 50px 0;
+    height: 900px;
+    /* background: linear-gradient(to bottom, var(--black-and-blue), var(--soft-white)); */
+    background-image: url('./src/pexels-sanaan-mazhar-3075993.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main__description {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--cool-gray);
+}
+.container-of-the-sections {
+    width: 100%;
+    min-width: 320px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Random section*/
+.random-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+    width: 80%;
+    max-width: 350px;
+    height: 320px;
+}
+.random-section__subtitle {
+    position: absolute;
+    width: 50%;
+    font-size: 2rem;
+    top: -10px;
+    background-color: var(--cool-gray);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--black-and-blue);
+}
+.random-section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cool-red-but-darker);
+    border-radius: 15px;
+}
+.random-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 80%;
+    height: 50px;
+}
+.random-labels__question {
+    margin-bottom: 7px;
+    width: 80%;
+    color: var(--soft-white);
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+.random-labels__input{
+    width: 80%;
+    background-color: var(--cool-red-but-darker);
+    border: none;
+    border-bottom: 1px solid var(--soft-white);
+    outline: none;
+    color: var(--soft-white);
+    text-indent: 10px;
+}
+/*The button*/
+.random-labels__button {
+    width: 50%;
+    height: 40px;
+    margin-top: 16px;
+    background-color: var(--cool-gray);
+    border: none;
+    color: black;
+}
+.random-labels__button:hover {
+    background-color: var(--black-and-blue);
+    color: var(--soft-white);
+    cursor: pointer;
+}
+/*Answer section*/
+.answer-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+    width: 80%;
+    max-width: 350px;
+    height: 320px;
+    background-color: var(--cool-gray);
+    border-radius: 15px;
+}
+.answer-section__subtitle{
+    position: absolute;
+    width: 50%;
+    font-size: 2rem;
+    top: -10px;
+    background-color: var(--cool-red);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--black-and-blue);
+}
+.answer-section__answer {
+    display: flex;
+    padding: 40px 0;
+    width: 80%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--black-and-blue);
+    letter-spacing: 0.5px;
+}
+/*Shadows*/
+.sub-section--shadow {
+    box-shadow: 10px 5px 5px black;
+}
+/*THE FOOTER*/
+.footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-and-blue);
+    color: var(--soft-white);
+    font-size: 1.5rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Groups</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Asign your team's tasks</h1>
+        <p clasS="header__description">
+            Here you'll avoid spending time while asigning team's tasks
+            with just one click
+        </p>
+    </header>
+    <main class="main">
+        <p class="main__description">Star asigning your tasks here</p>
+        <section class="container-of-the-sections">
+            <section class="random-section">
+                <h2 class="random-section__subtitle">Form</h2>
+                <form class="random-section-form sub-section--shadow">
+                    <label class="random-labels" for="groupsQuantity">
+                        <span class="random-labels__question">Write the group's number</span>
+                        <input class="random-labels__input" type="number" id="groupsQuantity">
+                    </label>
+                    <label class="random-labels" for="practiceQuantity">
+                        <span class="random-labels__question">How many tasks do you have on the 1st assignment?</span>
+                        <input class="random-labels__input" type="number" id="practiceQuantity">
+                    </label>
+                    <label class="random-labels" for="preinformQuantity">
+                        <span class="random-labels__question">How many tasks do you have on the 2nd assignment?</span>
+                        <input class="random-labels__input" type="number" id="preinformQuantity">
+                    </label>
+                    <button class="random-labels__button" type="button" onclick="makeRandomThings()">Asign!</button>
+                </form>
+            </section>
+            <section class="answer-section sub-section--shadow">
+                <h2 class="answer-section__subtitle">Answers</h2>
+                <p class="answer-section__answer" id="answer1"></p>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">All rights reserved</p>
+    </footer>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

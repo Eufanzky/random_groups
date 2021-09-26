@@ -1,0 +1,15 @@
+.header{
+    max-width: none;
+    width: 100%;
+    height: 100px;
+}
+.main {
+    height: 450px;
+}
+.container-of-the-sections {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer {
+    height: 55px;
+}
